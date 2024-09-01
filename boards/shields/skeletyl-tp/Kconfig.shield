@@ -1,0 +1,5 @@
+config SHIELD_SKELETYL_TP_LEFT
+    def_bool $(shields_list_contains,skeletyl_tp_left)
+
+config SHIELD_SKELETYL_TP_RIGHT
+    def_bool $(shields_list_contains,skeletyl_tp_right)

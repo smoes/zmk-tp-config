@@ -1,0 +1,12 @@
+file_format: "1"
+id: skeletyl_tp
+name: Skeletyl TP
+type: shield
+url: https://github.com/Bastardkb/Skeletyl
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - skeletyl_tp_left
+  - skeletyl_tp_right

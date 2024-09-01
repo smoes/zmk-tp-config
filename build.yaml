@@ -19,6 +19,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: skeletyl_left
+    shield: skeletyl_tp_left
   - board: nice_nano_v2
-    shield: skeletyl_right
+    shield: skeletyl_tp_right
