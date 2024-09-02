@@ -5,6 +5,9 @@ manifest:
     - name: infused-kim
       url-base: https://github.com/infused-kim 
   projects:
+    - name: zmk-helpers
+      revision: main
+      path: modules/helpers
     - name: zmk
       remote: infused-kim
       revision: pr-testing/mouse_ps2_module_base
