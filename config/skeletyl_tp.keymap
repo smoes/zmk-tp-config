@@ -7,9 +7,9 @@
 
 #define DEFAULT 0
 #define SYMBOL  1
-#define NUM     3
-#define MOUSE   4
-#define NAV     5
+#define NUM     2
+#define MOUSE   3
+#define NAV     4
 
 /*
  * Defines to enable/disable features
