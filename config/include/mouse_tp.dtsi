@@ -86,7 +86,7 @@
 
       // Set the layer that should automatically activate when the mouse is
       // moving.
-      layer-toggle = <4>;
+      layer-toggle = <MOUSE>;
 
       // How long the mouse needs to move for before the layer is activated (to
       // avoid accidental activations while typing) (Default: 250)
@@ -120,8 +120,8 @@
 
       // Enable clicking by tapping on the TP.
       // Not all TPs support this.
-      tp-press-to-select;
-      tp-press-to-select-threshold = <10>;
+      // tp-press-to-select;
+      // tp-press-to-select-threshold = <10>;
 
 
       // Adjust axis settings on the TP
