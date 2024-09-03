@@ -78,6 +78,7 @@
             bindings = <&kp>, <&kp>;
         };
         hml: homerow_mods_left {
+             compatible = "zmk,behavior-hold-tap";
              flavor = "balanced";
              tapping-term-ms = <280>;
              #binding-cells = <2>;
@@ -88,6 +89,7 @@
              hold-trigger-on-release;             // delay positional check until key-release
         };
         hmr: homerow_mods_right {
+             compatible = "zmk,behavior-hold-tap";
              flavor = "balanced";
              tapping-term-ms = <280>;
              #binding-cells = <2>;
