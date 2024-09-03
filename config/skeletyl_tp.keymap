@@ -5,14 +5,11 @@
 
 // Modified keymap based on personal experience, with some improvements based on Miryoku layout.
 
-#define QWERTY  0
-#define COLDH   1
-#define NAV     2
+#define DEFAULT 0
+#define SYMBOL  1
 #define NUM     3
-#define PRGRM   4
-#define FUN     5
-#define ILLUST  6
-#define GAME    7
+#define MOUSE   4
+#define NAV     5
 
 #define MOUSE_KEYS 2
 #define MOUSE_TP 3
@@ -196,71 +193,43 @@
             bindings = <
     &kp  Q      &kp  W       &kp  E       &kp  R           &kp T           &kp Y       &kp  U       &kp  I       &kp  O       &kp P
     &hml LGUI A &hml LALT S  &hml LCTRL D &hml LSHFT F     &kp G           &kp H       &hmr LSHFT J &hmr LCTRL K &hmr LALT L  &hmr LGUI SQT
-    &kp  Z      &hm  RALT X  &kp C        &kp  V           &kp B           &kp N       &kp  M       &kp  COMMA   &kp  DOT     &kp FSLH
-                             &kp DEL      &kp SPACE        &lt PRGRM TAB   &kp BSPC    &lt  NAV RET &lt FUN ESC
+    &kp  Z      &kp  X       &kp C        &kp  V           &kp B           &kp N       &kp  M       &kp  COMMA   &kp  DOT     &kp FSLH
+                             &kp ESC      &kp SPACE        &lt NUM         &kp BSPC    &kp  RET     &to  SYMBOL
             >;
         };
 
-        colemak_dh {
+        symbol {
             bindings = <
-    &kp Q       &kp W       &kp F       &kp P           &kp B           &kp J       &kp L       &kp U       &kp Y           &kp SQT
-    &hmp LGUI A &hm LALT R  &hm LCTRL S &hm LSHFT T     &kp G           &kp M       &hm LSHFT N &hm LCTRL E &hm LALT I      &hmp LGUI O
-    &kp Z       &hm RALT X  &kp C       &kp D           &kp V           &kp K       &kp H       &kp COMMA   &hm RALT DOT    &kp FSLH
-                            &kp DEL     &lt NUM SPACE   &lt PRGRM TAB     &kp BSPC    &lt NAV RET &lt FUN ESC
+    &kp  Q      &kp  W       &kp  E       &kp  R           &kp T           &kp Y       &kp  U       &kp  I       &kp  O       &kp P
+    &hml LGUI A &hml LALT S  &hml LCTRL D &hml LSHFT F     &kp G           &kp H       &hmr LSHFT J &hmr LCTRL K &hmr LALT L  &hmr LGUI SQT
+    &kp  Z      &kp  X       &kp C        &kp  V           &kp B           &kp N       &kp  M       &kp  COMMA   &kp  DOT     &kp FSLH
+                            &to DEFAULT &kp SPACE       &kp TAB         &kp BSPC    &kp RET     &kp TAB
             >;
         };
 
-        nav_layer {
+        num {
             bindings = <
-    &kp HOME    &kp PG_UP       &kp UP      &kp PG_DN       &kp CAPS    &none       &none       &none       &none       &none
-    &kp END     &kp LEFT        &kp DOWN    &kp RIGHT       &kp INS     &none       &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI
-    &kp LC(Z)   &kp LC(LEFT)    &none       &kp LC(RIGHT)   &kp LC(Y)   &none       &none       &none       &none       &none
-                                &kp LC(X)   &kp LC(C)       &kp LC(V)   &none       &none       &none     
+    &kp  Q      &kp  W       &kp  E       &kp  R           &kp T           &kp Y       &kp  U       &kp  I       &kp  O       &kp P
+    &hml LGUI A &hml LALT S  &hml LCTRL D &hml LSHFT F     &kp G           &kp H       &hmr LSHFT J &hmr LCTRL K &hmr LALT L  &hmr LGUI SQT
+    &kp  Z      &kp  X       &kp C        &kp  V           &kp B           &kp N       &kp  M       &kp  COMMA   &kp  DOT     &kp FSLH
+                            &to DEFAULT &kp SPACE       &kp TAB         &kp BSPC    &kp RET     &kp TAB
             >;
         };
 
-        num_layer {
+        mouse {
             bindings = <
-    &none       &none       &none       &none       &none       AS(LBKT)        AS(N7)      AS(N8)      AS(N9)  AS(RBKT)
-    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none       AS(EQUAL)       AS(N4)      AS(N5)      AS(N6)  AS(SEMI)
-    &none       &none       &none       &none       &none       AS(GRAVE)       AS(N1)      AS(N2)      AS(N3)  AS(BSLH)
-                            &none       &trans      &none       &as LPAR DOT    &as RPAR N0 AS(MINUS)
+    U_MSS_TP_S_I  U_MSS_TP_V6_I  &kp  E       &kp  R           &kp T           &kp Y       &kp  U       &kp  I       &kp  O       &kp P
+    U_MSS_TP_S_D  U_MSS_TP_V6_D  &hml LCTRL D &hml LSHFT F     &kp G           &kp H       &hmr LSHFT J &hmr LCTRL K &hmr LALT L  &hmr LGUI SQT
+    &kp  Z        &kp  X         &kp C        &kp  V           &kp B           &kp N       &kp  M       &kp  COMMA   &kp  DOT     &kp FSLH
+                                 &to DEFAULT  &kp SPACE        &kp TAB         &mkp MCLK   &mkp LCLK   &mkp RCLK 
             >;
         };
 
-       prgrm_layer {
-           bindings = <
-    &none       &none       &none       &none       &none       &none   &none       &none       &none   &none
-    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHFT   &none       &none   AS(LBKT)    AS(RBKT)    &none   AS(SEMI)
-    &none       &none       &none       &none       &none       &none   &kp EXCL    &kp EQUAL   &none   &kp FSLH
-                            &trans      &none       &none       &kp LPAR    &kp RPAR    &kp UNDER
-            >;
-        };
-
-        fun_layer {
-            bindings = <
-    &kp F12 &kp F7  &kp F8      &kp F9      &kp PSCRN       &none   &none       &none       &none       &none
-    &kp F11 &kp F4  &kp F5      &kp F6      &kp SLCK        &none   &kp LSHFT   &kp LCTRL   &kp LALT    &kp LGUI
-    &kp F10 &kp F1  &kp F2      &kp F3      &kp PAUSE_BREAK &none   &none       &none       &none       &none
-                    &kp K_APP   &kp SPACE   &kp TAB         &none   &none       &trans
-            >;
-        };
-
-        illust_fun_layer {
-            bindings = <
-    &kp F12 &kp F7  &kp F8          &kp F9          &kp LBKT        &none   &none   &none   &none   &none
-    &kp F11 &kp F4  &kp F5          &kp F6          &kp RBKT        &none   &none   &none   &none   &none
-    &kp F10 &kp F1  &kp F2          &kp F3          &kp BSLH        &none   &none   &none   &none   &none
-                    &sk LC(LSHFT)   &mt LSHFT LC(Z) &mt LCTRL LC(Y) &none   &none   &none
-            >;
-        };
-
-        game_layer {
-            bindings = <
-    &kp F12 &kp Q  &kp W  &kp E  &kp R              &kp LGUI   &kp U   &kp I   &kp O   &kp LCTRL
-    &kp F1 &kp A  &kp S  &kp D  &kp F              &kp LALT   &kp J   &kp K   &kp L   &kp LSHFT
-    &none &kp Z  &kp X  &kp C  &kp V                 &none   &kp LEFT   &kp UP   &kp DOWN   &kp RIGHT
-                    &kp DEL &kp SPACE &kp TAB   &kp BSPC   &kp RET   &kp ESC
+        nav {
+    &kp  Q      &kp  W       &kp  E       &kp  R           &kp T           &kp Y       &kp  U       &kp  I       &kp  O       &kp P
+    &hml LGUI A &hml LALT S  &hml LCTRL D &hml LSHFT F     &kp G           &kp H       &hmr LSHFT J &hmr LCTRL K &hmr LALT L  &hmr LGUI SQT
+    &kp  Z      &kp  X       &kp C        &kp  V           &kp B           &kp N       &kp  M       &kp  COMMA   &kp  DOT     &kp FSLH
+                            &to DEFAULT &kp SPACE       &kp TAB         &kp BSPC    &kp RET     &kp TAB
             >;
         };
 
