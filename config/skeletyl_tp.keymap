@@ -57,14 +57,6 @@
   #define U_TOG_TP_SET &none
 #endif  // HAS_MOUSE_TP
 
-
-
-
-
-
-
-
-
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
 / {
@@ -137,10 +129,10 @@
 
         mouse {
             bindings = <
-    U_MSS_TP_S_I  U_MSS_TP_V6_I  &kp  E       &kp  R           &kp T           &kp Y       &kp  U       &kp  I       &kp  O       &kp P
-    U_MSS_TP_S_D  U_MSS_TP_V6_D  &hml LCTRL D &hml LSHFT F     &kp G           &kp H       &hmr LSHFT J &hmr LCTRL K &hmr LALT L  &hmr LGUI SQT
-    &kp  Z        &kp  X         &kp C        &kp  V           &kp B           &kp N       &kp  M       &kp  COMMA   &kp  DOT     &kp FSLH
-                                 &to DEFAULT  &kp SPACE        &kp TAB         &mkp MCLK   &mkp LCLK   &mkp RCLK 
+    &kp  Q      &kp  W       &kp  E       &kp  R           &kp T           &kp Y       &kp  U       &kp  I       &kp  O       &kp P
+    &hml LGUI A &hml LALT S  &hml LCTRL D &hml LSHFT F     &kp G           &kp H       &hmr LSHFT J &hmr LCTRL K &hmr LALT L  &hmr LGUI SQT
+    &kp  Z      &kp  X       &kp C        &kp  V           &kp B           &kp N       &kp  M       &kp  COMMA   &kp  DOT     &kp FSLH
+                            &to DEFAULT &kp SPACE       &kp TAB         &kp BSPC    &kp RET     &kp TAB
             >;
         };
 
