@@ -109,10 +109,10 @@
 
         symbol {
             bindings = <
-    &kp GRAVE     &kp W     &kp E        &kp PRCNT      &none           &kp AMP     &kp  LBKT    &kp  RBKT    &kp CARET    &kp APOS
+    &none         &none     &kp GRAVE    &kp PRCNT      &kp UNDER       &kp AMP     &kp  LBKT    &kp  RBKT    &kp CARET    &kp APOS
     &kp EXCL      &kp AT    &kp EQUALS   &kp MINUS      &kp HASH        &kp LT      &kp  LPAR    &kp  RPAR    &kp PIPE     &kp GT       
-    &none         &kp BLSH  &kp PLUS     &kp START      &kp TILDE       &kp EXCL    &kp  LBRC    &kp  RBRC    &kp DLLR     &kp DQT
-                            &to DEFAULT  &kp SPACE      &kp TAB         &kp BSPC    &kp RET      &kp TAB
+    &none         &kp BLSH  &kp PLUS     &kp STAR       &kp TILDE       &kp EXCL    &kp  LBRC    &kp  RBRC    &kp DLLR     &kp DQT
+                            &to DEFAULT  &kp SPACE      &kp TAB         &kp BSPC    &kp  RET     &kp  TAB
             >;
         };
 
