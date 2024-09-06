@@ -138,7 +138,7 @@
             bindings = <
     U_MSS_TP_S_I  U_MSS_TP_V6_I  U_MSS_TP_NI_I        &kp  R           &kp T           &kp Y       &kp  K_SCROLL_UP    &kp  I       &kp  O       &kp P
     U_MSS_TP_S_D  U_MSS_TP_V6_D  U_MSS_TP_NI_D        &kp F            &kp G           &kp LEFT    &kp  DOWN           &kp  UP      &kp  RIGHT   &hmr LGUI SQT
-    U_MSS_RET     &kp  X         &kp C                &kp  V           &kp B           &kp N       &kp  K_SCROLL_DOWN  &kp  COMMA   &kp  DOT     &kp FSLH
+    U_MSS_RESET   &kp  X         &kp C                &kp  V           &kp B           &kp N       &kp  K_SCROLL_DOWN  &kp  COMMA   &kp  DOT     &kp FSLH
                                  &to DEFAULT          &kp SPACE       &kp TAB          &kp K_BACK  &kp  K_FORWARD      &kp TAB
             >;
         };
