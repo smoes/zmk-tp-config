@@ -97,7 +97,6 @@
       layer-toggle-timeout-ms = <2000>;
     };
 
-
    /*
     * Mouse Driver Settings
     */
