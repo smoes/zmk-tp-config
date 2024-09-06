@@ -118,9 +118,9 @@
 
         num {
             bindings = <
-    &kp  Q      &kp  W       &kp  E       &kp  R           &kp T           &kp Y       &kp  7       &kp  8       &kp  9       &kp P
-    &hml LGUI A &hml LALT S  &hml LCTRL D &hml LSHFT F     &kp G           &kp H       &kp  4       &kp  5       &kp  6       &hmr LGUI SQT
-    &kp  Z      &kp  X       &kp C        &kp  V           &kp B           &kp N       &kp  1       &kp  2       &kp  3     &kp FSLH
+    &kp  Q      &kp  W       &kp  E       &kp  R           &kp T           &kp Y       &kp  N7       &kp  N8       &kp  N9       &kp P
+    &hml LGUI A &hml LALT S  &hml LCTRL D &hml LSHFT F     &kp G           &kp H       &kp  N4       &kp  N5       &kp  N6       &hmr LGUI SQT
+    &kp  Z      &kp  X       &kp C        &kp  V           &kp B           &kp N       &kp  N1       &kp  N2       &kp  N3     &kp FSLH
                             &to DEFAULT &kp SPACE       &kp TAB         &kp BSPC    &kp RET     &kp 0 
             >;
         };
