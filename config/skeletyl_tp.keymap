@@ -136,9 +136,9 @@
 
         nav {
             bindings = <
-    U_MSS_TP_S_I  U_MSS_TP_V6_I  U_MSS_TP_NI_I        &kp  R           &kp T           &kp Y       &kp  PG_DOWN        &kp  I       &kp  O       &kp P
+    U_MSS_TP_S_I  U_MSS_TP_V6_I  U_MSS_TP_NI_I        &kp  R           &kp T           &kp Y       &kp  PG_UP &kp  I       &kp  O       &kp P
     U_MSS_TP_S_D  U_MSS_TP_V6_D  U_MSS_TP_NI_D        &kp F            &kp G           &kp LEFT    &kp  DOWN           &kp  UP      &kp  RIGHT   &hmr LGUI SQT
-    U_MSS_RESET   &kp  X         &kp C                &kp  V           &kp B           &kp N       &kp  PG_DOWN        &kp  COMMA   &kp  DOT     &kp FSLH
+    U_MSS_RESET   &kp  X         &kp C                &kp  V           &kp B           &kp N       &kp  PG_DN        &kp  COMMA   &kp  DOT     &kp FSLH
                                  &to DEFAULT          &kp SPACE       &kp TAB          &kp MB4     &kp  MB5      &kp TAB
             >;
         };
