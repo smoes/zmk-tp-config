@@ -55,18 +55,9 @@
 
 
 
-#define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
 / {
     behaviors {
-        as: auto_shift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <135>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
         hml: homerow_mods_left {
              compatible = "zmk,behavior-hold-tap";
              flavor = "balanced";
@@ -111,8 +102,8 @@
           #binding-cells = <1>;
           bindings
               = <&macro_param_1to1>
-              , <&macro_tab &kp MACRO_PLACEHOLDER>
-              , <&macro_tab &to DEFAULT>
+              , <&macro_tap &kp MACRO_PLACEHOLDER>
+              , <&macro_tap &to DEFAULT>
               ;
        };
     };
