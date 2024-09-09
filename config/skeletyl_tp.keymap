@@ -131,10 +131,10 @@
 
         num {
             bindings = <
-    &kp N1     &def W        &kp N4         &def R         &def T           &def Y        &def U        &def N8        &kp  N9     &def P
-    &kp N2     &kp N3        &def D         &def F         &def G           &def H        &def J        &def  K        &def L      &kp N0       
-    &def Z     &def X        &def N5        &def V         &def B           &kp  N6       &kp  N7       &def  COMMA    &def DOT    &def FSLH
-                             &to DEFAULT    &def SPACE     &def TAB        &kp BSPC       &def RET      &to DEFAULT 
+    &kp N1     &def W        &kp  N4       &def R         &def T           &def Y        &def U        &def N8        &kp  N9     &def P
+    &kp N2     &kp N3        &def D        &def F         &def G           &def H        &def J        &def  K        &def L      &kp N0       
+    &def Z     &def X        &kp  N5       &def V         &def B           &kp  N6       &kp  N7       &def  COMMA    &def DOT    &def FSLH
+                             &to DEFAULT   &def SPACE     &def TAB         &kp BSPC      &def RET      &to DEFAULT 
             >;
         };
 
