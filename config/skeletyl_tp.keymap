@@ -143,7 +143,7 @@
     &def  Q        &def  W         &def  E         &def R            &def T           &def Y       &def  U       &def  I       &def  O       &def P
     &def  A        &def  S         &def  D         &def F            &def G           &def H       &def  J       &def K        &def  L       &def SQT
     &def  Z        &def  X         &def  C         &def V            &def B           &def N       &def  M       &def  COMMA   &def  DOT     &def FSLH
-                                   &to DEFAULT     &def SPACE        &def TAB         &mkp MCLK    &mkp LCLK     &mkp RCLK 
+                                   &to DEFAULT     &lt NAV SPACE        &def TAB         &mkp MCLK    &mkp LCLK     &mkp RCLK 
             >;
         };
 
