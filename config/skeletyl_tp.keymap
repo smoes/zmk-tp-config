@@ -98,8 +98,8 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sl SYMBOL>, <&to SYMBOL>
-        };
+            bindings = <&sl SYMBOL>, <&to SYMBOL>;
+       };
        hmld: hmld {
           compatible = "zmk,behavior-macro-two-param";
           wait-ms = <0>;
