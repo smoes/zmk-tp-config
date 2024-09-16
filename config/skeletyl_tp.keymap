@@ -170,16 +170,16 @@
             bindings = <
     &kp N1     &def W        &kp  N4        &def R           &def T           &def Y        &def U           &kp  N8          &kp  N9        &def P
     &kp N2     &kp N3        &hmld LCTRL D  &hmld LSHIFT F   &def G           &def H        &hmrd LSHIFT J   &hmrd LCTRL K    &hmrd LALT L   &kp N0       
-    &def Z     &def X        &def C         &kp  N5          &def B           &kp  N6       &kp  N7          &kp  COMMA       &def DOT       &def FSLH
-                             &def ESC    &def SPACE       &trans              &trans        &def RET         &to DEFAULT 
+    &def Z     &def X        &def C         &kp  N5          &def B           &kp  N6       &kp  N7          &kp  COMMA       &kp DOT        &def FSLH
+                             &def ESC       &def SPACE       &trans           &trans        &def RET         &to DEFAULT 
             >;
         };
 
         mouse {
             bindings = <
-    &def  Q        &def  W         &def  E         &def R            &def T           &def Y       &def  U           &def  I          &def  O       &def P
-    &hmld LGUI A   &hmld LALT S    &hmld LCTRL D   &hmld LSHIFT F    &def G           &def H       &hmrd LSHIFT J    &hmrd LALT K     &hmrd LALT L  &hmrd LGUI SQT
-    &def  Z        &def  X         &def  C         &def V            &def B           &def N       &def  M           &def  COMMA      &def  DOT     &def FSLH
+    &def  Q        &def  W         &def  E         &def R            &def T           &def Y         &def  U           &def  I          &def  O       &def P
+    &hmld LGUI A   &hmld LALT S    &hmld LCTRL D   &hmld LSHIFT F    &def G           &def H         &hmrd LSHIFT J    &hmrd LALT K     &hmrd LALT L  &hmrd LGUI SQT
+    &def  Z        &def  X         &def  C         &def V            &def B           &def N         &def  M           &def  COMMA      &def  DOT     &def FSLH
                                    &to DEFAULT     &lt NAV SPACE     &trans           &mkp MCLK      &mkp LCLK         &mkp RCLK 
             >;
         };
