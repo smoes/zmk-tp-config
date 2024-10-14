@@ -80,6 +80,26 @@
              hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
              hold-trigger-on-release;             // delay positional check until key-release
         };
+        hmlnd: homerow_mods_left {
+             compatible = "zmk,behavior-hold-tap";
+             flavor = "balanced";
+             tapping-term-ms = <280>;
+             #binding-cells = <2>;
+             quick-tap-ms = <175>;                // repeat on tap-into-hold
+             bindings = <&kp>, <&kp>;
+             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;
+             hold-trigger-on-release;             // delay positional check until key-release
+        };
+        hmrnd: homerow_mods_right {
+             compatible = "zmk,behavior-hold-tap";
+             flavor = "balanced";
+             tapping-term-ms = <280>;
+             #binding-cells = <2>;
+             quick-tap-ms = <175>;                // repeat on tap-into-hold
+             bindings = <&kp>, <&kp>;
+             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
+             hold-trigger-on-release;             // delay positional check until key-release
+        };
         hold: hold {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -98,7 +118,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sl SYMBOL>, <&to SYMBOL>;
+            bindings = <&sl SYMBOL>, <&to NUM>;
        };
        hmld: hmld {
           compatible = "zmk,behavior-macro-two-param";
@@ -150,10 +170,10 @@
 
         default {
             bindings = <
-    &kp  Q      &kp  W       &kp  E       &kp  R           &kp T           &kp Y       &kp  U       &kp  I       &kp  O       &kp P
-    &hml LGUI A &hml LALT S  &hml LCTRL D &hml LSHFT F     &kp G           &kp H       &hmr LSHFT J &hmr LCTRL K &hmr LALT L  &hmr LGUI SEMI 
-    &kp  Z      &kp  X       &kp C        &kp  V           &kp B           &kp N       &kp  M       &kp  COMMA   &kp  DOT     &kp FSLH
-                             &kp ESC      &lt NAV SPACE    &kp TAB        &kp BSPC     &kp  RET     &symbol
+    &kp  Q        &kp  W         &kp  E         &kp  R           &kp T           &kp Y       &kp  U       &kp  I         &kp  O         &kp P
+    &hmlnd LGUI A &hmlnd LALT S  &hmlnd LCTRL D &hml LSHFT F     &kp G           &kp H       &hmr LSHFT J &hmrnd LCTRL K &hmrnd LALT L  &hmrnd LGUI SEMI 
+    &kp  Z        &kp  X         &kp C          &kp  V           &kp B           &kp N       &kp  M       &kp  COMMA     &kp  DOT       &kp FSLH
+                                 &kp ESC        &lt NAV SPACE    &kp TAB         &kp BSPC    &kp  RET     &symbol
             >;
         };
 
@@ -168,19 +188,19 @@
 
         num {
             bindings = <
-    &kp N1     &def W        &kp  N4        &def R           &def T           &def Y        &def U           &kp  N8          &kp  N9        &def P
-    &kp N2     &kp N3        &hmld LCTRL D  &hmld LSHIFT F   &def G           &def H        &hmrd LSHIFT J   &hmrd LCTRL K    &hmrd LALT L   &kp N0       
-    &def Z     &def X        &def C         &kp  N5          &def B           &kp  N6       &kp  N7          &kp  COMMA       &kp DOT        &def FSLH
-                             &def ESC       &def SPACE       &trans           &trans        &def RET         &to DEFAULT 
+    &def Q     &def W        &def  E        &def R           &def T           &def Y        &kp N7            &kp  N8          &kp N9         &kp COMMA
+    &def A     &def S        &hmld LCTRL D  &hmld LSHIFT F   &def G           &kp  N0       &kp N4            &kp  N5          &kp N6         &kp DOT      
+    &def Z     &def X        &def C         &def  V          &def B           &def N        &kp N1            &kp  N2          &kp N3         &def FSLH
+                             &def ESC       &def SPACE       &trans           &trans        &def RET          &to  DEFAULT 
             >;
         };
 
         mouse {
             bindings = <
-    &def  Q        &def  W         &def  E         &def R            &def T           &def Y         &def  U           &def  I          &def  O       &def P
-    &hmld LGUI A   &hmld LALT S    &hmld LCTRL D   &hmld LSHIFT F    &def G           &def H         &hmrd LSHIFT J    &hmrd LALT K     &hmrd LALT L  &hmrd LGUI SQT
+    &def  Q        &def  W         &def  E         &def R            &def T           &mkp RCLK      &def  U           &def  I          &def  O       &def P
+    &hmld LGUI A   &hmld LALT S    &hmld LCTRL D   &hmld LSHIFT F    &def G           &mkp MCLK      &hmrd LSHIFT J    &hmrd LALT K     &hmrd LALT L  &hmrd LGUI SQT
     &def  Z        &def  X         &def  C         &def V            &def B           &def N         &def  M           &def  COMMA      &def  DOT     &def FSLH
-                                   &to DEFAULT     &lt NAV SPACE     &trans           &mkp MCLK      &mkp LCLK         &mkp RCLK 
+                                   &to DEFAULT     &lt NAV SPACE     &trans           &def BSPC      &mkp LCLK         &symbol 
             >;
         };
 
@@ -189,7 +209,7 @@
     U_MSS_TP_S_I  U_MSS_TP_V6_I  U_MSS_TP_NI_I        &kp  R           &kp T           &kp Y       &msc  SCRL_UP      &kp  I       &kp  O       &kp P
     U_MSS_TP_S_D  U_MSS_TP_V6_D  U_MSS_TP_NI_D        &kp F            &kp G           &kp LEFT    &kp   DOWN         &kp  UP      &kp  RIGHT   &hmr LGUI SQT
     U_MSS_RESET   &kp  X         &kp C                &kp  V           &kp B           &kp N       &msc  SCRL_DOWN    &kp  COMMA   &kp  DOT     &kp FSLH
-                                 &to DEFAULT          &trans           &trans          &mkp MB4    &mkp  MB5          &to DEFAULT
+                                 &to DEFAULT          &trans           &trans          &kp MB4    &mkp  MB5          &to  DEFAULT
             >;
         };
     };
