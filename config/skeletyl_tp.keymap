@@ -198,7 +198,7 @@
         mouse {
             bindings = <
     &def  Q        &def  W         &def  E         &def R            &def T           &mkp RCLK      &def  U           &def  I          &def  O       &def P
-    &hmld LGUI A   &hmld LALT S    &hmld LCTRL D   &hmld LSHIFT F    &def G           &mkp MCLK      &hmrd LSHIFT J    &hmrd LALT K     &hmrd LALT L  &hmrd LGUI SQT
+    &hmld LGUI A   &hmld LALT S    &hmld LCTRL D   &hmld LSHIFT F    &def G           &mkp MCLK      &hmrd RSHIFT J    &hmrd LALT K     &hmrd LALT L  &hmrd LGUI SQT
     &def  Z        &def  X         &def  C         &def V            &def B           &def N         &def  M           &def  COMMA      &def  DOT     &def FSLH
                                    &to DEFAULT     &lt NAV SPACE     &trans           &def BSPC      &mkp LCLK         &symbol 
             >;
@@ -209,7 +209,7 @@
     U_MSS_TP_S_I  U_MSS_TP_V6_I  U_MSS_TP_NI_I        &kp  R           &kp T           &kp Y       &msc  SCRL_UP      &kp  I       &kp  O       &kp P
     U_MSS_TP_S_D  U_MSS_TP_V6_D  U_MSS_TP_NI_D        &kp F            &kp G           &kp LEFT    &kp   DOWN         &kp  UP      &kp  RIGHT   &hmr LGUI SQT
     U_MSS_RESET   &kp  X         &kp C                &kp  V           &kp B           &kp N       &msc  SCRL_DOWN    &kp  COMMA   &kp  DOT     &kp FSLH
-                                 &to DEFAULT          &trans           &trans          &kp MB4    &mkp  MB5          &to  DEFAULT
+                                 &to DEFAULT          &trans           &trans          &mkp MB4    &mkp  MB5          &to  DEFAULT
             >;
         };
     };
