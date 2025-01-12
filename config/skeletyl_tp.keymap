@@ -192,7 +192,7 @@
         mouse {
             bindings = <
     U_MSS_TP_S_I  U_MSS_TP_V6_I  U_MSS_TP_NI_I        &none           &none                   &none       &msc  SCRL_UP      &none       &none         &none
-    U_MSS_TP_S_D  U_MSS_TP_V6_D  U_MSS_TP_NI_D        &none           &none                   &kp LEFT    &kp   DOWN         &kp  UP     &kp  RIGHT    &hmrnd LGUI SEMI 
+    U_MSS_TP_S_D  U_MSS_TP_V6_D  U_MSS_TP_NI_D        &none           &none                   &kp LEFT    &kp   DOWN         &kp  UP     &kp  RIGHT    &hmrd LGUI SEMI 
     U_MSS_RESET   &none          &none                &none           &none                   &none       &msc  SCRL_DOWN    &none       &none         &none
                                  &to DEFAULT          &trans          &trans                  &mkp MCLK   &mkp  LCLK         &none
             >;
