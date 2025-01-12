@@ -140,9 +140,10 @@
               , <&macro_param_2to2>
               , <&macro_press &hmr MACRO_PLACEHOLDER MACRO_PLACEHOLDER>
               , <&macro_pause_for_release>
-              , <&macro_param_2to2>
               , <&macro_param_1to1>
-              , <&macro_release &hmr MACRO_PLACEHOLDER MACRO_PLACEHOLDER>
+              , <&macro_release &kp MACRO_PLACEHOLDER>
+              , <&macro_param_2to2>
+              , <&macro_release &kp MACRO_PLACEHOLDER>
               ;
        };
        def: def {
