@@ -167,7 +167,7 @@
     &kp  Q        &kp  W         &kp  E         &kp  R           &kp T           &kp Y       &kp  U       &kp  I         &kp  O         &kp P
     &hmlnd LGUI A &hmlnd LALT S  &hmlnd LCTRL D &hml LSHFT F     &kp G           &kp H       &hmr LSHFT J &hmrnd LCTRL K &hmrnd LALT L  &hmrnd LGUI SEMI 
     &kp  Z        &kp  X         &kp C          &kp  V           &kp B           &kp N       &kp  M       &kp  COMMA     &kp  DOT       &kp FSLH
-                                 &lt NUM ESC    &lt NAV SPACE  &sk TAB         &kp BSPC    &kp  RET     &sl SYMBOL
+                                 &lt NUM ESC    &lt NAV SPACE    &kp TAB         &kp BSPC    &kp  RET     &sl SYMBOL
             >;
         };
 
