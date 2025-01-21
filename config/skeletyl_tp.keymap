@@ -195,10 +195,10 @@
 
         mouse {
             bindings = <
-    &def  Q        &def  W         &def  E         &def R            &def T           &def Y        &def  U           &def  I          &def  O       &def P
-    &hmld LGUI A   &hmld LALT S    &hmld LCTRL D   &hmld LSHIFT F    &def G           &def H        &hmrd RSHIFT J    &hmrd LCTRL K    &hmrd LALT L  &hmrd LGUI SQT
-    &def  Z        &def  X         &def  C         &def V            &def B           &def N        &def  M           &def  COMMA      &def  DOT     &def FSLH
-                                   &to DEFAULT     &lt NAV SPACE     &mkp MCLK        &def BSPC     &mkp LCLK         &mkp RCLK 
+    &def  Q        &def  W         &def  E         &def R            &def T           &def Y          &def  U           &def  I          &def  O       &def P
+    &hmld LGUI A   &hmld LALT S    &hmld LCTRL D   &hmld LSHIFT F    &def G           &def H          &hmrd RSHIFT J    &hmrd LCTRL K    &hmrd LALT L  &hmrd LGUI SQT
+    &def  Z        &def  X         &def  C         &def V            &def B           &def N          &def  M           &def  COMMA      &def  DOT     &mkb RCLK
+                                   &lt NUM ESC     &lt NAV SPACE     &mkp MCLK        &to DEFAULT     &mkp LCLK         &sl SYMBOL 
             >;
         };
 
