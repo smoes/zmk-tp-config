@@ -79,6 +79,12 @@
              hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
              hold-trigger-on-release;             // delay positional check until key-release
         };
+        sd: shift_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHIFT>, <&kp CAPS>
+        };
     };
 
     combos {
@@ -130,7 +136,7 @@
         default {
             bindings = <
     &kp  Q        &kp  W         &kp  E         &kp  R           &kp T           &kp Y       &kp  U              &kp  I             &kp  O         &kp P
-    &hml LGUI A &hml LALT S  &hml LCTRL D &kp F            &kp G           &kp H       &kp  J              &hmr LCTRL K     &hmr LALT L  &hmr LGUI SEMI 
+    &hml LGUI A &hml LALT S  &hml LCTRL D &kp F            &kp G           &kp H       &kp  J              &hmr LCTRL K     &hmr LALT L  &hmrrLGUI SEMI 
     &kp  Z        &kp  X         &kp C          &kp  V           &kp B           &kp N       &kp  M              &kp  COMMA         &kp  DOT       &kp FSLH
                                  &lt NUM ESC    &lt NAV SPACE    &mkp MCLK       &mkp LCLK   &lt  SYMBOL RET     &sd
             >;
