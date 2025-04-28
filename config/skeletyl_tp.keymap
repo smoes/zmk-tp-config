@@ -159,7 +159,7 @@
         nav {
             bindings = <
     U_MSS_TP_S_I  U_MSS_TP_V6_I  U_MSS_TP_NI_I        &kp  R           &kp PG_UP       &kp Y       &msc  SCRL_UP      &kp  I       &kp  O       &kp P
-    U_MSS_TP_S_D  U_MSS_TP_V6_D  U_MSS_TP_NI_D        &altt            &kp saltt       &kp LEFT    &kp   DOWN         &kp  UP      &kp  RIGHT   &hmr LGUI SQT
+    U_MSS_TP_S_D  U_MSS_TP_V6_D  U_MSS_TP_NI_D        &altt            &saltt          &kp LEFT    &kp   DOWN         &kp  UP      &kp  RIGHT   &hmr LGUI SQT
     U_MSS_RESET   &kp  X         &kp C                &kp  V           &kp PG_DN       &kp N       &msc  SCRL_DOWN    &kp  COMMA   &kp  DOT     &kp FSLH
                                  &to DEFAULT          &trans           &trans          &mkp MB4    &mkp  MB5          &to  DEFAULT
             >;
