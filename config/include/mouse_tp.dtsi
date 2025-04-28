@@ -147,12 +147,10 @@
       // These values are allowed: 10,20,40,60,80,100,200
       // sampling-rate = <60>;
 
-
       // Disables clicking.
       // Useful when using the PS2 GPIO driver that is prone to
       // erros in transmissions to reduce accidental clicks.
       // disable-clicking;
-
 
       // Enable scroll wheel
       // For mouse devices supporting the Intellimouse extension. Not relevant
