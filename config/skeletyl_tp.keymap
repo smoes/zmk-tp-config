@@ -149,7 +149,7 @@
     &kp  Q        &kp  W         &kp  E         &kp  R           &kp T           &kp Y       &kp  U              &kp  I             &kp  O         &kp P
     &hml LGUI A &hml LALT S  &hml LCTRL D &kp F            &kp G           &kp H       &kp  J              &hmr LCTRL K     &hmr LALT L  &hmr LGUI SEMI 
     &kp  Z        &kp  X         &kp C          &kp  V           &kp B           &kp N       &kp  M              &kp  COMMA         &kp  DOT       &kp FSLH
-                                 &lt NUM ESC    &lt NAV SPACE    &sd        &mkp LCLK   &kp  RET     &lt SYMBOL TAB
+                                 &mt LSHIFT ESC    &lt NAV SPACE    &lt NUM TAB        &mkp LCLK   &lt SYMBOL  RET   &mt RSHIFT BSPC
             >;
         };
 
